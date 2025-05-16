@@ -37,3 +37,8 @@ def fun(d):
   i = 10
   return i + d      # Noncompliant
   i += 1             # this is never executed
+
+def fun(d):
+  i = 10
+  return i + d      # Noncompliant
+  i += 1             # this is never executed
