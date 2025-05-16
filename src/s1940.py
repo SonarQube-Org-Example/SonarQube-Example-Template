@@ -23,17 +23,8 @@ def fun(a):
   i += 1             # this is never executed
 
 
-def fun(b):
+def fun2(b):
   i = 10
   return i + b       # Noncompliant
   i += 1             # this is never executed
 
-def fun(c):
-  i = 10
-  return i + c       # Noncompliant
-  i += 1             # this is never executed
-
-def fun(d):
-  i = 10
-  return i + d      # Noncompliant
-  i += 1             # this is never executed
