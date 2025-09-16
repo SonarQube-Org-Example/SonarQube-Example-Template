@@ -13,10 +13,6 @@ This template contains complete CI/CD pipeline examples for:
 - **GitLab CI** - `.gitlab-ci.yml` configuration
 - **Bitbucket Pipelines** - `bitbucket-pipelines.yml` configuration
 
-Each platform includes examples for both:
-- 🌐 **SonarQube Cloud** integration
-- 🏢 **SonarQube Server** integration
-
 ## 📁 Repository Structure
 
 ```
@@ -48,7 +44,11 @@ Before using these pipeline examples, ensure you have:
 
 ### For SonarQube Cloud:
 - `SONAR_TOKEN` secret configured in your CI/CD platform
-- SonarQube Cloud organization set up
+- `SONAR_HOST_URL` variable/secret configured with your SonarQube Cloud URL  
+  - There are two SonarQube Cloud Options:  
+  https://sonarcloud.io/  
+  https://sonarqube.us/
+- SonarQube Cloud organization and project set up
 
 ### For SonarQube Server:
 - `SONAR_TOKEN` secret configured in your CI/CD platform  
