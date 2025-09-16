@@ -103,22 +103,21 @@ The pipelines support PR decoration to show SonarQube findings directly in your 
 
 ## 📚 Platform-Specific Documentation
 
-### GitHub Actions
-- [SonarQube Server Integration](https://docs.sonarsource.com/sonarqube-server/latest/devops-platform-integration/github-integration/introduction/)
-- [SonarQube Cloud Integration](https://docs.sonarsource.com/sonarqube-cloud/getting-started/github/)
-- [GitHub Action Marketplace](https://github.com/marketplace/actions/official-sonarqube-scan)
+Each CI/CD platform has its own detailed README with platform-specific setup instructions, configuration options, and troubleshooting guides:
 
-### Azure DevOps  
-- [SonarQube Server Extension](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarqube)
-- [SonarQube Cloud Extension](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarcloud)
+- **[GitHub Actions](ci-examples/github-actions/.github/workflows/README.md)** - Complete guide for GitHub Actions workflows
+- **[Azure DevOps](ci-examples/azure-devops/README.md)** - Azure DevOps pipeline configuration and setup
+- **[GitLab CI](ci-examples/gitlab/README.md)** - GitLab CI/CD pipeline examples and configuration
+- **[Bitbucket Pipelines](ci-examples/bitbucket/README.md)** - Bitbucket Pipelines setup and customization
 
-### GitLab CI
-- [SonarQube Server Integration](https://docs.sonarsource.com/sonarqube-server/latest/devops-platform-integration/gitlab-integration/)
-- [SonarQube Cloud Integration](https://docs.sonarsource.com/sonarqube-cloud/getting-started/gitlab/)
-
-### Bitbucket Pipelines
-- [SonarQube Server Integration](https://docs.sonarsource.com/sonarqube-server/latest/devops-platform-integration/bitbucket-integration/)
-- [SonarQube Cloud Integration](https://docs.sonarsource.com/sonarqube-cloud/getting-started/bitbucket/)
+Each platform guide includes:
+- 🚀 Quick setup instructions
+- ⚙️ Required configuration and secrets
+- 🛠️ Customization options
+- 🧪 Testing procedures
+- 🔗 Platform integration setup
+- 🐛 Troubleshooting common issues
+- 💡 Best practices and performance tips
 
 ## 🔗 Additional Resources
 
