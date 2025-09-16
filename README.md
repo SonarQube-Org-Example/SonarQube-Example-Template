@@ -66,10 +66,15 @@ All pipeline examples include:
 
 ## 🔧 Configuration Notes
 
-### Project Naming Convention
-The examples use this naming pattern for SonarQube projects:
-- **Format**: `{OrganizationName}-{Platform}_{RepositoryName}`
-- **Example**: `MyOrg-gh_MyRepo` (for GitHub), `MyOrg-azdo_MyRepo` (for Azure DevOps)
+### Project Configuration
+The SonarQube project name and key are configured in the `sonar-project.properties` file:
+- **`sonar.projectKey`** - Unique identifier for your project in SonarQube
+- **`sonar.projectName`** - Display name for your project in SonarQube
+
+You can customize these values to match your preferred naming convention. Common patterns include:
+- `{OrganizationName}-{RepositoryName}` (e.g., `MyOrg-MyRepo`)
+- `{TeamName}.{ProjectName}` (e.g., `frontend.my-app`)
+- Or any naming scheme that works for your organization
 
 ### SonarQube Scanner Versions
 - **GitHub Actions**: Uses `sonarqube-scan-action@v5` (automatically gets latest v5.x.x)
