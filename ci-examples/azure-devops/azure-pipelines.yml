@@ -48,13 +48,17 @@ stages:
       artifact: CoverageReport
       displayName: 'Download Coverage Report'
 
+    # Checkout the repository and disable shallow fetch to ensure full history is available for SonarQube analysis
+    - checkout: self
+      fetchDepth: 0
+
     - task: SonarQubePrepare@7
       inputs:
         SonarQube: 'SonarQube' # This assumes you've set up a service connection named 'SonarQube'
         scannerMode: 'CLI'
         configMode: 'manual'
-        cliProjectKey: 'SonarQube-Project-Example-GH-AzDev'
-        cliProjectName: 'SonarQube-Project-Example-GH-AzDev'
+        cliProjectKey: 'SonarQube-Project-Example'
+        cliProjectName: 'SonarQube-Project-Example'
         cliSources: 'src/'
         extraProperties: |
           sonar.python.coverage.reportPaths=$(Pipeline.Workspace)/CoverageReport/coverage.xml
