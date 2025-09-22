@@ -18,17 +18,18 @@ This directory contains GitHub Actions workflow examples for integrating SonarQu
 ### For SonarQube Cloud
 
 **Repository Secrets (Settings > Secrets and variables > Actions):**
-- `SONAR_TOKEN` - Your SonarQube Cloud user token
+- `SONAR_TOKEN` - Your SonarQube Cloud token
 
 **Repository Variables:**
-- `SONAR_HOST_URL` - SonarQube Cloud URL:
-  - `https://sonarcloud.io` (for global instance)
-  - `https://sonarqube.us` (for US government instance)
+- `SONAR_HOST_URL` - SonarQube URL
+  SonarQube Cloud URL options:
+  - `https://sonarcloud.io` (for European hosted instance)
+  - `https://sonarqube.us` (for US hosted instance)
 
 ### For SonarQube Server
 
 **Repository Secrets:**
-- `SONAR_TOKEN` - Your SonarQube Server user token
+- `SONAR_TOKEN` - Your SonarQube Server token
 
 **Repository Variables:**
 - `SONAR_HOST_URL` - Your SonarQube Server URL (e.g., `https://sonar.company.com`)
