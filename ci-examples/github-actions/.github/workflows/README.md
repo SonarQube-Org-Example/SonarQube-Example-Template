@@ -52,8 +52,8 @@ on:
 ```
 
 ### SonarQube Scanner Action
-The workflow uses the official `sonarqube-scan-action@v5`:
-- Automatically uses the latest v5.x.x version
+The workflow uses the official `sonarqube-scan-action@v6`:
+- Automatically uses the latest v6.x.x version
 - Supports both SonarQube Server and Cloud
 - Includes built-in quality gate checking
 
