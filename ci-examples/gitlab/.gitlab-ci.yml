@@ -45,7 +45,6 @@ sonarqube-server-analysis:
         -Dsonar.token=$SONAR_TOKEN \
         -Dsonar.host.url=$SONAR_HOST_URL \
         -Dsonar.python.coverage.reportPaths=coverage.xml \
-        -Dsonar.qualitygate.wait=true \
         -Dsonar.sources=src/
   allow_failure: false
   only:
